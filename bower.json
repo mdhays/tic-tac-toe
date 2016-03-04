@@ -1,0 +1,23 @@
+{
+  "name": "tic-tac-toe",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Matthew Hays <mdhays1995@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mdhays/tic-tac-toe",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6"
+  }
+}

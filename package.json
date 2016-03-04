@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/mdhays/tic-tac-toe#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "bower": "^1.7.7",
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
   },
   "devDependencies": {
     "nodemon": "^1.9.1"
