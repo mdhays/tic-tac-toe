@@ -1,1 +1,21 @@
-h1 hello
+doctype html
+html
+  head
+    title Tic Tac Toe
+    link(href='stylesheets/style.css', rel='stylesheet')
+
+  h1 Tic Tac Toe
+
+  .board
+    input(type='button', class='tile', id='btn0', onClick="turn('btn0')", value='')
+    input(type='button', class='tile', id='btn1', onClick="turn('btn1')")
+    input(type='button', class='tile', id='btn2', onClick="turn('btn2')")
+    input(type='button', class='tile', id='btn3')
+    input(type='button', class='tile', id='btn4')
+    input(type='button', class='tile', id='btn5')
+    input(type='button', class='tile', id='btn6')
+    input(type='button', class='tile', id='btn7')
+    input(type='button', class='tile', id='btn8')
+
+  script(src='vendor/jquery/dist/jquery.min.js')
+  script(src='js/logic.js')
