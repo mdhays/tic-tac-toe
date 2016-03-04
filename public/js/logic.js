@@ -2,22 +2,7 @@
 
 let player = 4
 
-const winningRows = [
-  [0, 1, 2],
-  [3, 4, 5],
-  [6, 7, 8]
-]
-
-const winningColumns = [
-  [0, 3, 6],
-  [1, 4, 7],
-  [2, 5, 8]
-]   
-
-const winningDiagonals = [
-  [0, 4, 8],
-  [2, 4, 6]
-]
+const winningArrs = ['012', '345', '678', '036', '147', '258', '048', '246']
 
 let playerX = []
 let playerO = []
@@ -32,6 +17,8 @@ function turn(btn) {
     console.log(playerX)
     document.getElementById(btn).value = 'X'
     player += 1
+
+    checkWinner(playerX)
   } else {
     console.log('o')
     playerO.push(btn)
@@ -39,5 +26,15 @@ function turn(btn) {
 
     document.getElementById(btn).value = 'O'
     player += 1
+
+    checkWinner(playerO)
   }
+}
+
+function checkWinner(dudeArray) {
+  let newarr = dudeArray.join('')
+  if(dudeArray.length === 3 && winningArrs.indexOf(newarr) !== -1) {
+    console.log('what a play')
+  }
+
 }
